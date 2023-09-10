@@ -26,9 +26,14 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serf;
-
-  background-color: white;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
 }
 
 ul li {
@@ -49,20 +54,13 @@ a:hover {
 }
 
 /* NavBar styling  */
-.body {
-  align-items: center;
-  justify-content: center;
-  /* background-color: blue; */
-  height: 100%;
-}
 
 .header {
   display: flex;
   align-items: center;
   /* background-color: orange; */
   justify-content: center;
-
-  /* display: none; */
+  width: 90%;
 }
 .navBar {
   display: flex;
@@ -100,6 +98,8 @@ a:hover {
 }
 .imgContainer {
   /* background-color: bisque; */
+  margin-right: 30px;
+  margin-top: 90px;
 }
 .img {
   /* height: 60px; */
@@ -146,35 +146,57 @@ a:hover {
   margin-left: 55px;
 }
 .avi-row {
-    display: flex;
-    flex-direction: row;
-    min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  min-width: 200px;
 }
 .avi {
   height: 60px;
   width: 60px;
   border-radius: 30px;
   /* background-color: white; */
+}
+.avi-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.myName {
+  font-size: xx-large;
+  /* color: aqua; */
+}
+.currentDay {
+  color: white;
+}
+.currentTime {
+  color: white;
+}
+.myStack {
+  color: white;
+}
+.gitRepo {
+  color: white;
+}
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .body {
+    background-color: yellow;
+  }
 }
-.avi-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }
-.myName{
-    font-size: xx-large;
-    /* color: aqua; */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 }
-.currentDay{
-  color: white;
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
-.currentTime{
-  color: white;
-}
-.myStack{
-  color: white;
-}
-.gitRepo{
-  color: white;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
