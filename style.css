@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
+
+/* CSS variables */
+
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #1e1e1e;
+  --seconary-color: #ea2027;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+body {
+  font-family: 'Roboto', sans-serf;
+
+  background-color: white;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+.logo-text {
+  color: var(--secondary-color);
+}
+
+/* NavBar styling  */
+.body {
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  /* background-color: orange; */
+  justify-content: center;
+
+  /* display: none; */
+}
+.navBar {
+  display: flex;
+  height: 50px;
+  width: 80%;
+  align-items: center;
+  border-radius: 30px;
+  background-color: black;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-self: center;
+  padding: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  height: fit-content;
+  width: 100%;
+  /* background-color: rgb(18, 187, 202); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+}
+.textContainer {
+  /* min-width: 40px; */
+  /* padding-left: 30px; */
+  margin-left: 440px;
+}
+.imgContainer {
+  /* background-color: bisque; */
+}
+.img {
+  /* height: 60px; */
+  width: 555px;
+}
+.nameIntro {
+  font-size: 30px;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  /* color: green; */
+}
+.linktree {
+  bottom: 900px;
+  font-size: 170px;
+}
+.bottom {
+  height: 120px;
+  width: 1190px;
+  border-radius: 15px;
+  background-color: #ea2027;
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.userName {
+  display: flex;
+  width: 180px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.line {
+  height: 55px;
+  width: 0.5px;
+  background-color: white;
+  margin-left: 55px;
+}
+.avi-row {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+}
+.avi {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  /* background-color: white; */
+
+}
+.avi-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+.myName{
+    font-size: xx-large;
+    /* color: aqua; */
+}
+.currentDay{
+  color: white;
+}
+.currentTime{
+  color: white;
+}
+.myStack{
+  color: white;
+}
+.gitRepo{
+  color: white;
+}
